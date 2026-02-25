@@ -2,7 +2,7 @@ from app.rag import ingest_document, ask
 import os
 import time
 
-print("=== Ingesting documents... ===\n")
+print("Ingesting documents... \n")
 docs_dir = "data/documents"
 for filename in os.listdir(docs_dir):
     if filename.endswith(".pdf"):
@@ -20,7 +20,7 @@ questions = [
 ]
 
 
-print("\n=== Answers ===\n")
+print("Answers: \n")
 for q in questions:
     print(f"Q: {q}")
     result = ask(q)
