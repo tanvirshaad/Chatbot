@@ -15,8 +15,8 @@ load_dotenv()
 VECTORSTORE_PATH = "data/vectorstore"
 
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-# llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash", temperature=0.2)
-llm = ChatOllama(model="llama3.2", temperature=0.2)
+llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-pro", temperature=0.2)
+# llm = ChatOllama(model="llama3.2", temperature=0.2)
 splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 
 def _load_or_create_store():

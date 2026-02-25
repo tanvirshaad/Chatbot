@@ -5,6 +5,7 @@ venv/
 env/
 
 data/vectorstore/
+data/documents/
 
 __pycache__/
 *.pyc
