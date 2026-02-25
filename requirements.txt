@@ -9,3 +9,6 @@ faiss-cpu
 python-dotenv
 pypdf
 docx2txt
+pytesseract
+pdf2image 
+pillow

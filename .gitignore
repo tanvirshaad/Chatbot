@@ -12,3 +12,7 @@ __pycache__/
 
 .DS_Store
 Thumbs.db
+
+check_model.py
+check_ocr.py
+check_pdf.py
